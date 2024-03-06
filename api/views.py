@@ -1,7 +1,7 @@
 import json
 
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 
 from openai import OpenAI
 
@@ -9,6 +9,8 @@ client = OpenAI(
     api_key="{PLACE YOUR KEY HERE}",
 )
 
+@authentication_classes([])
+@permission_classes([])
 @api_view(['GET'])
 def getData(request):
     return Response({
@@ -16,6 +18,8 @@ def getData(request):
         'result': 'API Works :)'
     })
 
+@authentication_classes([])
+@permission_classes([])
 @api_view(['POST'])
 def postData(request):
     query = "Extract the following fields \"color,neck type,sleeve length\" as a JSON object in this format {color:,neckType:,sleeveLength:}.";
