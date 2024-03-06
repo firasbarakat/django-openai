@@ -74,9 +74,9 @@ Sample Request
   fetch('http://localhost:8000/prompt?format=json', {
     method: 'post',
     headers: {'Content-Type':'application/json'},
-    body: {
+    body: JSON.stringify({
       "prompt": "Red shirt with a crewneck and long sleeves"
-    }
+    })
   })
   .then(res => res.json())
   .then(function(res) {
