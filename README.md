@@ -3,6 +3,10 @@
 
 A simple Django rest API server that integrates with OpenAI
 
+(DISCLAIMER)
+
+The current Python version used is 3.11.8
+
 
 ## About this project
 
