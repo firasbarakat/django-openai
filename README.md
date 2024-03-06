@@ -78,6 +78,12 @@ Sample Request
       "prompt": "Red shirt with a crewneck and long sleeves"
     }
   })
+  .then(res => res.json())
+  .then(function(res) {
+    console.log(res);
+  }).catch(function(err) {
+    console.error(err);
+  })
 ```
 
 Sample Response
