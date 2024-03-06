@@ -42,6 +42,7 @@ Install dependencies
 
 ```bash
   python -m pip install openai
+  python -m pip install django-cors-headers
 ```
 
 Place your OpenAI API Key in this file (django-openai/api/views.py)
