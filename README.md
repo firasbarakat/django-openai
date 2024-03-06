@@ -38,6 +38,12 @@ Go to the project directory
   cd django-openai
 ```
 
+Install dependencies
+
+```bash
+  python -m pip install openai
+```
+
 Place your OpenAI API Key in this file (django-openai/api/views.py)
 
 ```bash
