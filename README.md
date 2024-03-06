@@ -20,9 +20,8 @@ It uses the openai-python python package (https://github.com/openai/openai-pytho
 Download the project to a local folder and make sure to add the required dependencies
 
 ```bash
-  cd django-openai
   python -m pip install Django
-  pip install djangorestframework
+  python -m pip install djangorestframework
 ```
     
 ## Run Locally
