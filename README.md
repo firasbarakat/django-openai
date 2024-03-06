@@ -42,6 +42,14 @@ Install dependencies
   python -m pip install djangorestframework
 ```
 
+Place your OpenAI API Key in this file (django-openai/api/views.py)
+
+```bash
+  client = OpenAI(
+    api_key="{PLACE YOUR KEY HERE}",
+  )
+```
+
 Start the server
 
 ```bash
